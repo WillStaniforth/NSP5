@@ -1,0 +1,142 @@
+<!doctype html>
+<link rel="stylesheet" href="CSS/HOME.css">>
+<head>
+<script src="JS/Home.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+<img class="topBanner" href="#Home" src="Assets/NSP_Banner.png" alt "Banner">
+<center>
+<ul>
+  <li><a href="file:///F:/Comp/Web%20Authoring%20Project/Codey%20Things/NSP5/Index.html"><b>Home</b></a></li>
+  <li><a class="active" href="file:///F:/Comp/Web%20Authoring%20Project/Codey%20Things/NSP5/Tour.html"><b>Tour</b></a></li>
+  <li><a href="file:///F:/Comp/Web%20Authoring%20Project/Codey%20Things/NSP5/Videos.html"><b>Videos</b></a></li>
+  <li><a href="file:///F:/Comp/Web%20Authoring%20Project/Codey%20Things/NSP5/NinjaBrian.html"><b>Ninja Brian</b></a></li>
+  <li><a href="file:///F:/Comp/Web%20Authoring%20Project/Codey%20Things/NSP5/DannySexbang.html"><b>Danny Sexbang</b></a></li>
+  <li><a href="file:///F:/Comp/Web%20Authoring%20Project/Codey%20Things/NSP5/Merch.html"><b>Merch</b></a></li>
+  <li><a href="file:///F:/Comp/Web%20Authoring%20Project/Codey%20Things/NSP5/ContactUs.html"><b>Contact Us</b></a></li>
+</ul>
+</center>
+<div class="TourPage">
+<table id="T1" class="Table">
+	<tr>
+		<th class="TableHead">Venue</th>
+		<th class="TableHead">Location</th>
+		<th class="TableHead">Date</th>
+		<th class="TableHead">Ticket</th>
+		<th class="TableHead">Add Ticket</th>
+		<th class="TableHead">Number Added</th>
+	</tr>
+	<tr>
+		<td class="TableData">The Fillmore</td>
+		<td class="TableData">Charlotte, North Carolina</td>
+		<td class="TableData">May 21</td>
+		<td class="TableData">$31</td>
+		<td class="TableData">
+		<button class="TableButton" id="Button1" type="button">Add</button>
+		</td>
+		<td class="TableData" id="No1"></td>
+	</tr>
+	<tr>
+		<td class="TableData">Tabernacle</td>
+		<td class="TableData">Atlanta, Georgia</td>
+		<td class="TableData">May 23</td>
+		<td class="TableData">$30</td>
+		<td class="TableData">
+		<button class="TableButton" id="Button2" type="button">Add</button>
+		</td>
+		<td class="TableData" id="No2"></td>
+	</tr>
+	<tr>
+		<td class="TableData">Hard Rock Live</td>
+		<td class="TableData">Orlando, Florida</td>
+		<td class="TableData">May 26</td>
+		<td class="TableData">$26</td>
+		<td class="TableData">
+		<button class="TableButton" id="Button3" type="button">Add</button>
+		</td>
+		<td class="TableData" id="No3"></td>
+	</tr>
+	<tr>
+		<td class="TableData">Rebel</td>
+		<td class="TableData">Toronto, Ontario</td>
+		<td class="TableData">Aug 20</td>
+		<td class="TableData">$34</td>
+		<td class="TableData">
+		<button class="TableButton" id="Button4" type="button">Add</button>
+		</td>
+		<td class="TableData" id="No4"></td>
+	</tr>	
+	<tr>
+		<td class="TableData">House of Blues</td>
+		<td class="TableData">Boston, Massachusetts</td>
+		<td class="TableData">Aug 23</td>
+		<td class="TableData">$25</td>
+		<td class="TableData">
+		<button class="TableButton" id="Button5" type="button">Add</button>
+		</td>
+		<td class="TableData" id="No5"></td>
+	</tr>
+		<tr>
+		<td class="TableData">The Electric Factory</td>
+		<td class="TableData">Philadelphia, Pennsylvania</td>
+		<td class="TableData">Aug 27</td>
+		<td class="TableData">$28</td>
+		<td class="TableData">
+		<button class="TableButton" id="Button6" type="button">Add</button>
+		</td>
+		<td class="TableData" id="No6"></td>
+	</tr>
+	<tr>
+		<td class="TableData">Filmore Auditorium</td>
+		<td class="TableData">Denver, Colorado</td>
+		<td class="TableData">Sep 23</td>
+		<td class="TableData">$34</td>
+		<td class="TableData">
+		<button class="TableButton" id="Button7" type="button">Add</button>
+		</td>
+		<td class="TableData" id="No7"></td>
+	</tr>
+	<tr>
+		<td class="TableData">Paramount Theatre</td>
+		<td class="TableData">Seattle, Washington</td>
+		<td class="TableData">Sep 26</td>
+		<td class="TableData">$26</td>
+		<td class="TableData">
+		<button class="TableButton" id="Button8" type="button">Add</button>
+		</td>
+		<td class="TableData" id="No8"></td>
+	</tr>
+	<tr>
+		<td class="TableData">The Masonic</td>
+		<td class="TableData">San Francisco, California</td>
+		<td class="TableData">Sep 30</td>
+		<td class="TableData">$32</td>
+		<td class="TableData">
+		<button class="TableButton" id="Button9" type="button">Add</button>
+		</td>
+		<td class="TableData" id="No9"></td>
+	</tr>
+
+</table>
+<table  id="T1" class="Table">
+	<tr>
+		<th class="TableHead">Total Cost ($)</th>
+		<th class="TableHead">Purchase</th>
+		<th class="TableHead">Clear</th>
+	</tr>
+	<tr>
+		<td class="TableData" id="CostOutput"></td>
+		<td class="TableData">
+		<button class="TableButton" id="ButtonPurchase" type="button">Buy</button>
+		</td>
+		<td class="TableData">
+		<button class="TableButton" id="ButtonClear" type="button">Clear</button>
+		</td>
+	</tr>
+</table>
+</div>
+</body>
+</form>
